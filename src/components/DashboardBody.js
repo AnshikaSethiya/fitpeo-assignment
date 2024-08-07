@@ -1,4 +1,4 @@
-import { Col, Grid, Layout, Row, Typography } from "antd";
+import { Col, Layout, Row, Typography } from "antd";
 import React from "react";
 import ActivityChart from "./ActivityChart";
 import CustomerFeedback from "./CustomerFeedback";
@@ -11,7 +11,6 @@ import TopHeader from "./TopHeader";
 
 const { Title } = Typography;
 const { Content } = Layout;
-const { useBreakpoint } = Grid;
 
 const DashboardBody = () => {
   return (
@@ -60,21 +59,3 @@ const DashboardBody = () => {
 };
 
 export default DashboardBody;
-
-{
-  /* <div className="dashboard-body">
-      <h2 className="font-color">Dashboard</h2>
-      <div className="main-container">
-        <div className="contRight">
-          <ActivityChart />
-          <KpiCards />
-          <RecentOrdersTable />
-        </div>
-        <div className="contLeft">
-          <NetProfitCard />
-          <GoalsSection />
-          <CustomerFeedback />
-        </div>
-      </div>
-    </div> */
-}
